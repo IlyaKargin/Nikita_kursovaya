@@ -1,0 +1,76 @@
+\hypertarget{classClientBase}{}\doxysection{Класс Client\+Base}
+\label{classClientBase}\index{ClientBase@{ClientBase}}
+
+
+Класс \mbox{\hyperlink{classClientBase}{Client\+Base}}.  
+
+
+
+
+{\ttfamily \#include $<$Client\+Base.\+h$>$}
+
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classClientBase_a4629958245241f76097fd2dd6a78adee}{read}} (std\+::string path\+To\+File)
+\begin{DoxyCompactList}\small\item\em Считывает информацию о клиенте из файла и возвращает ее в виде карты. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classClientBase_a61a73af2c7e9f0d03e4551a14dea1759}{find}} (std\+::string \&name, std\+::map$<$ std\+::string, std\+::string $>$ \&all)
+\begin{DoxyCompactList}\small\item\em Находит сведения о клиенте на заданной карте, используя заданное имя клиента. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classClientBase}{Client\+Base}}. 
+
+Класс \mbox{\hyperlink{classClientBase}{Client\+Base}} считывает базу данных с клиентами. \begin{DoxyWarning}{Предупреждения}
+Реализация только для типа данных uint16\+\_\+t 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classClientBase_a61a73af2c7e9f0d03e4551a14dea1759}\label{classClientBase_a61a73af2c7e9f0d03e4551a14dea1759}} 
+\index{ClientBase@{ClientBase}!find@{find}}
+\index{find@{find}!ClientBase@{ClientBase}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily static std\+::string Client\+Base\+::find (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{all }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Находит сведения о клиенте на заданной карте, используя заданное имя клиента. 
+
+Находит информацию о клиенте на данной карте, выполняя поиск по имени клиента, указанному в заданном параметре. Имя клиента передается по ссылке, чтобы его можно было изменить на фактическое найденное имя, если оно есть.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя искомого клиента. \\
+\hline
+{\em all} & Карта с информацией о клиенте для поиска. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сведения о клиенте, если совпадение найдено, или пустая строка, если совпадение не найдено. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClientBase_a4629958245241f76097fd2dd6a78adee}\label{classClientBase_a4629958245241f76097fd2dd6a78adee}} 
+\index{ClientBase@{ClientBase}!read@{read}}
+\index{read@{read}!ClientBase@{ClientBase}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily static std\+::map$<$std\+::string,std\+::string$>$ Client\+Base\+::read (\begin{DoxyParamCaption}\item[{std\+::string}]{path\+To\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Считывает информацию о клиенте из файла и возвращает ее в виде карты. 
+
+Считывает информацию о клиенте из файла, указанного по заданному пути, и возвращает ее в виде карты, где ключами являются имена клиентов, а значениями — сведения о клиенте.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+To\+File} & Путь к файлу, содержащему информацию о клиенте. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Карта с информацией о клиенте, где ключи — это имена клиентов, а значения — сведения о клиенте. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ClientBase_8h}{Client\+Base.\+h}}\end{DoxyCompactItemize}

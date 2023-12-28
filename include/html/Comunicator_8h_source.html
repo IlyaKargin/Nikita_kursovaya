@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NIKITA KARGIN: Исходный файл Comunicator.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NIKITA KARGIN
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Comunicator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Comunicator_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classComunicator.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classComunicator.html">Comunicator</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classComunicator.html#af050e78b1524771b8eb8a5811a17ba47">   26</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classComunicator.html#af050e78b1524771b8eb8a5811a17ba47">Initialize</a>(<span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classComunicator.html#a5dfc3442c35b20d753e107dab7506212">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classComunicator.html#a5dfc3442c35b20d753e107dab7506212">WaitClient</a>(std::map&lt;std::string, std::string&gt; &amp;all_names);</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classComunicator.html#abd38b1f07ad40e3dcf995bbb789b5642">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classComunicator.html#abd38b1f07ad40e3dcf995bbb789b5642">getClientSocket</a>(){<span class="keywordflow">return</span> m_clientSock;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> autorized(<span class="keywordtype">int</span> work_sock, std::string file_name,std::map &lt;std::string,std::string&gt; &amp;all_names);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> m_socket = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> m_clientSock = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="ttc" id="aclassComunicator_html"><div class="ttname"><a href="classComunicator.html">Comunicator</a></div><div class="ttdoc">Класс Comunicator.</div><div class="ttdef"><b>Definition:</b> Comunicator.h:20</div></div>
+<div class="ttc" id="aclassComunicator_html_a5dfc3442c35b20d753e107dab7506212"><div class="ttname"><a href="classComunicator.html#a5dfc3442c35b20d753e107dab7506212">Comunicator::WaitClient</a></div><div class="ttdeci">int WaitClient(std::map&lt; std::string, std::string &gt; &amp;all_names)</div><div class="ttdoc">Ожидает клиента и получает все имена</div></div>
+<div class="ttc" id="aclassComunicator_html_abd38b1f07ad40e3dcf995bbb789b5642"><div class="ttname"><a href="classComunicator.html#abd38b1f07ad40e3dcf995bbb789b5642">Comunicator::getClientSocket</a></div><div class="ttdeci">int getClientSocket()</div><div class="ttdoc">Возвращает сокет клиента</div><div class="ttdef"><b>Definition:</b> Comunicator.h:37</div></div>
+<div class="ttc" id="aclassComunicator_html_af050e78b1524771b8eb8a5811a17ba47"><div class="ttname"><a href="classComunicator.html#af050e78b1524771b8eb8a5811a17ba47">Comunicator::Initialize</a></div><div class="ttdeci">void Initialize(int port)</div><div class="ttdoc">Инициализирует коммуникатор</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,82 @@
+\hypertarget{classComunicator}{}\doxysection{Класс Comunicator}
+\label{classComunicator}\index{Comunicator@{Comunicator}}
+
+
+Класс \mbox{\hyperlink{classComunicator}{Comunicator}}.  
+
+
+
+
+{\ttfamily \#include $<$Comunicator.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComunicator_af050e78b1524771b8eb8a5811a17ba47}{Initialize}} (int port)
+\begin{DoxyCompactList}\small\item\em Инициализирует коммуникатор \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComunicator_a5dfc3442c35b20d753e107dab7506212}{Wait\+Client}} (std\+::map$<$ std\+::string, std\+::string $>$ \&all\+\_\+names)
+\begin{DoxyCompactList}\small\item\em Ожидает клиента и получает все имена \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComunicator_abd38b1f07ad40e3dcf995bbb789b5642}{get\+Client\+Socket}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает сокет клиента \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classComunicator}{Comunicator}}. 
+
+Класс \mbox{\hyperlink{classComunicator}{Comunicator}} отвечает за связь между клиентом и сервером. \begin{DoxyWarning}{Предупреждения}
+Реализация только для типа данных uint16\+\_\+t 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classComunicator_abd38b1f07ad40e3dcf995bbb789b5642}\label{classComunicator_abd38b1f07ad40e3dcf995bbb789b5642}} 
+\index{Comunicator@{Comunicator}!getClientSocket@{getClientSocket}}
+\index{getClientSocket@{getClientSocket}!Comunicator@{Comunicator}}
+\doxysubsubsection{\texorpdfstring{getClientSocket()}{getClientSocket()}}
+{\footnotesize\ttfamily int Comunicator\+::get\+Client\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Возвращает сокет клиента 
+
+\begin{DoxyReturn}{Возвращает}
+сокет клиента 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComunicator_af050e78b1524771b8eb8a5811a17ba47}\label{classComunicator_af050e78b1524771b8eb8a5811a17ba47}} 
+\index{Comunicator@{Comunicator}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Comunicator@{Comunicator}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Comunicator\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Инициализирует коммуникатор 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em port} & -\/ порт для подключения \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classComunicator_a5dfc3442c35b20d753e107dab7506212}\label{classComunicator_a5dfc3442c35b20d753e107dab7506212}} 
+\index{Comunicator@{Comunicator}!WaitClient@{WaitClient}}
+\index{WaitClient@{WaitClient}!Comunicator@{Comunicator}}
+\doxysubsubsection{\texorpdfstring{WaitClient()}{WaitClient()}}
+{\footnotesize\ttfamily int Comunicator\+::\+Wait\+Client (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{all\+\_\+names }\end{DoxyParamCaption})}
+
+
+
+Ожидает клиента и получает все имена 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em all\+\_\+names} & -\/ словарь со всеми именами \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+возвращает код результата 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Comunicator_8h}{Comunicator.\+h}}\end{DoxyCompactItemize}

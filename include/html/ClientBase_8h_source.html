@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NIKITA KARGIN: Исходный файл ClientBase.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NIKITA KARGIN
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ClientBase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ClientBase_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classClientBase.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classClientBase.html">ClientBase</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classClientBase.html#a4629958245241f76097fd2dd6a78adee">   30</a></span>&#160;    <span class="keyword">static</span> std::map &lt;std::string,std::string&gt; <a class="code" href="classClientBase.html#a4629958245241f76097fd2dd6a78adee">read</a>(std::string pathToFile);</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classClientBase.html#a61a73af2c7e9f0d03e4551a14dea1759">   41</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="classClientBase.html#a61a73af2c7e9f0d03e4551a14dea1759">find</a>(std::string &amp;name, std::map&lt; std::string, std::string &gt; &amp;all);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="ttc" id="aclassClientBase_html"><div class="ttname"><a href="classClientBase.html">ClientBase</a></div><div class="ttdoc">Класс ClientBase.</div><div class="ttdef"><b>Definition:</b> ClientBase.h:20</div></div>
+<div class="ttc" id="aclassClientBase_html_a4629958245241f76097fd2dd6a78adee"><div class="ttname"><a href="classClientBase.html#a4629958245241f76097fd2dd6a78adee">ClientBase::read</a></div><div class="ttdeci">static std::map&lt; std::string, std::string &gt; read(std::string pathToFile)</div><div class="ttdoc">Считывает информацию о клиенте из файла и возвращает ее в виде карты.</div></div>
+<div class="ttc" id="aclassClientBase_html_a61a73af2c7e9f0d03e4551a14dea1759"><div class="ttname"><a href="classClientBase.html#a61a73af2c7e9f0d03e4551a14dea1759">ClientBase::find</a></div><div class="ttdeci">static std::string find(std::string &amp;name, std::map&lt; std::string, std::string &gt; &amp;all)</div><div class="ttdoc">Находит сведения о клиенте на заданной карте, используя заданное имя клиента.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

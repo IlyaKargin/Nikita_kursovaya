@@ -1,0 +1,76 @@
+\begin{theindex}
+
+  \item {Calculator}, \hyperpage{7}
+    \subitem {math}, \hyperpage{7}
+  \item {Calculator.h}, \hyperpage{17}
+  \item {ClientBase}, \hyperpage{8}
+    \subitem {find}, \hyperpage{8}
+    \subitem {read}, \hyperpage{9}
+  \item {ClientBase.h}, \hyperpage{18}
+  \item {Comunicator}, \hyperpage{9}
+    \subitem {getClientSocket}, \hyperpage{10}
+    \subitem {Initialize}, \hyperpage{10}
+    \subitem {WaitClient}, \hyperpage{10}
+  \item {Comunicator.h}, \hyperpage{19}
+
+  \indexspace
+
+  \item {Error}
+    \subitem {Logs}, \hyperpage{12}
+
+  \indexspace
+
+  \item {find}
+    \subitem {ClientBase}, \hyperpage{8}
+
+  \indexspace
+
+  \item {getClientSocket}
+    \subitem {Comunicator}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Info}
+    \subitem {Logs}, \hyperpage{12}
+  \item {Initialize}
+    \subitem {Comunicator}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Logs}, \hyperpage{11}
+    \subitem {Error}, \hyperpage{12}
+    \subitem {Info}, \hyperpage{12}
+    \subitem {Logs}, \hyperpage{11}
+    \subitem {Warning}, \hyperpage{12}
+  \item {Logs.h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {math}
+    \subitem {Calculator}, \hyperpage{7}
+
+  \indexspace
+
+  \item {read}
+    \subitem {ClientBase}, \hyperpage{9}
+
+  \indexspace
+
+  \item {ServerError}, \hyperpage{13}
+    \subitem {ServerError}, \hyperpage{14}
+  \item {ServerError.h}, \hyperpage{22}
+
+  \indexspace
+
+  \item {UserInterface}, \hyperpage{14}
+    \subitem {UserInterface}, \hyperpage{15}
+  \item {UserInterface.h}, \hyperpage{23}
+
+  \indexspace
+
+  \item {WaitClient}
+    \subitem {Comunicator}, \hyperpage{10}
+  \item {Warning}
+    \subitem {Logs}, \hyperpage{12}
+
+\end{theindex}
